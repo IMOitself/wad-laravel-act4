@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('first_name', 50);
             $table->string('last_name', 50);
             $table->string('email')->unique();
+            $table->string('course', 100);
             $table->year('year_level');
-            $table->string('course', 100);  
             $table->timestamps();
         });
     }
